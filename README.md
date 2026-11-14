@@ -268,5 +268,7 @@
 
 # seats and occupancy status through a simple dashboard.
 
+New feature: Improved bus occupancy status monitoring.
+
 # 
 
