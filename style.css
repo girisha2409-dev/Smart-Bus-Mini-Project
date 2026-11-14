@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef3f8;
+    text-align: center;
+}
+
+header {
+    background: #123b64;
+    color: white;
+    padding: 25px;
+}
+
+.dashboard {
+    padding: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.card p {
+    font-size: 28px;
+    color: #087cba;
+    font-weight: bold;
+}
+
+.controls {
+    padding: 25px;
+}
+
+button {
+    background: #087cba;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #064f7b;
+}
+
+button:focus-visible {
+    outline: 3px solid #f0a500;
+    outline-offset: 3px;
+}
+
+.progress-container {
+    width: 80%;
+    max-width: 500px;
+    height: 25px;
+    background: #ccc;
+    margin: 15px auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #16a34a;
+    transition: width 0.3s;
+}
+
+#message {
+    font-weight: bold;
+    color: #b42318;
+}
+
+.stops {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stops ul {
+    list-style: none;
+    padding: 0;
+}
+
+.stops li {
+    padding: 8px;
+}
+
+footer {
+    background: #123b64;
+    color: white;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    button {
+        width: 85%;
+    }
+}

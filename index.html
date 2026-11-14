@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Bus Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Smart Bus Monitoring System</h1>
+    <p>Real-Time Passenger Occupancy Dashboard</p>
+</header>
+
+<main>
+    <section class="dashboard">
+        <h2>Bus Occupancy Dashboard</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Bus Capacity</h3>
+                <p id="capacity">40</p>
+            </div>
+
+            <div class="card">
+                <h3>Current Passengers</h3>
+                <p id="passengers">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Available Seats</h3>
+                <p id="available">40</p>
+            </div>
+
+            <div class="card">
+                <h3>Occupancy</h3>
+                <p id="percentage">0%</p>
+            </div>
+        </div>
+
+        <h3>Occupancy Level</h3>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h3>Status: <span id="status">Available</span></h3>
+
+        <p id="message" aria-live="polite"></p>
+    </section>
+
+    <section class="controls">
+        <h2>Passenger Management</h2>
+        <button onclick="addPassenger()">Passenger Entry</button>
+        <button onclick="removePassenger()">Passenger Exit</button>
+        <button onclick="resetBus()">Reset</button>
+    </section>
+
+    <section class="stops">
+        <h2>Bus Stops</h2>
+        <ul>
+            <li>Central Bus Stand</li>
+            <li>College Stop</li>
+            <li>Railway Station</li>
+            <li>City Hospital</li>
+            <li>Airport</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>Smart Bus Mini Project | 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
